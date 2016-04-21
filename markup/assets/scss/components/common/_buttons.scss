@@ -1,0 +1,7 @@
+.btn{
+	@include buttons(17px, 45px, $btn-bg,$btn-hover-bg, 14px);
+	
+	@media only screen and (max-width: 767px){
+		@include buttons(10px, 20px, $btn-bg,$btn-hover-bg, 12px);
+	}
+}

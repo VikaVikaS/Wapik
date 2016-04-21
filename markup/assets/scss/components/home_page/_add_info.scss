@@ -1,0 +1,27 @@
+.add_info{
+	background: $dark-section-bg;
+	padding:170px 0 130px;
+	position: relative;
+	@media only screen and (max-width: 767px){
+		padding:20px 0 20px;
+		overflow: hidden;
+	}
+	&-align-img{
+		position: absolute;
+		right:-160px;
+		top:65px;
+		@media only screen and (max-width: 767px){
+			top:0;
+			opacity: 0.4;
+		}
+	}
+	&-description{
+		width: 515px;
+		@media only screen and (max-width: 767px){
+			width: 100%;
+		}
+		& h2{
+			margin: 0 0 20px;
+		}
+	}
+}

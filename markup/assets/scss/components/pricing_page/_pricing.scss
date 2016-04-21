@@ -1,0 +1,29 @@
+#pricing{
+	& .pricing-main{
+		padding:144px 0 60px;
+		background: $dark-section-bg;
+		text-align:center;
+		& .plans_heading{
+			margin:0 0 47px;
+			& h2{
+			margin:0 0 25px;
+			}
+		}
+		& .plans{
+			margin-bottom:30px;
+			&-item{
+				background: #fff;
+			}
+		}
+	}
+	& .plans-description{
+		padding:78px 0 25px;
+		margin:0;
+	}
+	& .support{
+		padding:25px 0 97px;
+		& .heading{
+			margin: 0 0 20px;
+		}
+	}
+}

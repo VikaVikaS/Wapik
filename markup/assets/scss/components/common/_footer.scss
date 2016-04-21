@@ -1,0 +1,167 @@
+.footer{
+	padding:100px 0 25px;
+	@media only screen and (max-width: 767px){
+		padding:20px 0 5px;
+		text-align:center;
+	}
+	&-holder{
+		font-size: 13px;
+		margin: 0 0 60px;
+		@media only screen and (max-width: 767px){
+			margin: 0 0 10px;
+		}
+		& .email-adress{
+			font-size:13px;
+		}
+		&-logo{
+			font-size: 22px;
+			font-family: 'proxima_nova_rgbold';
+			color:$brand-color-secondary;
+			text-transform: uppercase;
+			margin:0 0 18px;
+		}
+		& .contact-info{
+			@media only screen and (max-width: 767px){
+				margin: 0 0 15px;
+			}
+			& ul{
+				list-style:none;
+				& li{
+					padding:0 0 11px;
+					&:last-child{
+						padding:0;
+						display: flex;
+						@media only screen and (max-width: 767px){
+							display: block;
+						}
+					}
+				}
+			}
+			& address{
+				font-style: normal;
+				display: inline-block;
+			}
+		}
+		& h4{
+			font-size: $h4-font-size;
+			line-height: $h4-line-height;
+			font-family: $h4-font-family;
+			color: $h4-color;
+			font-weight: normal;
+			margin: 0 0 25px;
+			@media only screen and (max-width: 767px){ 
+				margin: 0 0 10px;
+			}
+		}
+		& ul{
+			list-style:none;
+			@media only screen and (max-width: 767px){
+				margin: 0 0 15px;
+			}
+			& li{
+				padding:0 0 13px;
+				& a{
+					color:$text-base-color;
+				}
+			}
+		}
+	}
+	& .follow-block{
+		& p{
+			margin: 0 0 25px;
+			@media only screen and (max-width: 767px){
+				margin: 0 0 10px;
+			}
+		}
+		& .fake-input{
+			display: inline-block;
+			width: 100%;
+			height:36px;
+			border-radius:4px;
+			background: #eef1ec;
+			font-family: "robotoregular";
+			position: relative;
+			@media only screen and (max-width: 767px){
+				width: 50%;
+			}
+			& input{
+				width: 85%;
+				background: transparent;
+				border:none;
+				padding:0 5px;
+				font-size: 13px;
+				line-height: 35px;
+				height:35px;
+				font-family: "robotoregular";
+				color:$text-base-color;
+				outline: none;
+				box-shadow:none;
+			}
+			& button{
+				background: transparent;
+				font-size: 19px;
+				color:$brand-color;
+				position: absolute;
+				right:8px;
+				top:8px;
+				cursor: pointer;
+			}
+		}
+	}
+	&-block-bottom{
+		padding:28px 0 0;
+		border-top:1px solid #eef1ec;
+		font-size:12px;
+		@media only screen and (max-width: 767px){
+			padding:10px 0 0;
+		}
+	}
+}
+.copyright{
+	@media only screen and (max-width: 767px){
+		margin: 0 0 10px;
+	}
+}
+.socialnetwork{
+	list-style:none;
+	text-align:right;
+	@media only screen and (max-width: 767px){
+		text-align:center;
+	}
+		& li{
+			display: inline-block;
+			padding:0 5px;
+			&:last-child{
+				padding:0 0 0 5px;
+			}
+			&:first-child{
+				padding:0 5px 0 0;
+			}
+			& a{
+				color:#fff;
+				display: flex;
+				justify-content: center;
+				align-items:center;
+				border-radius:50%;
+				width: 30px;
+				height: 30px;
+				font-size: 16px;
+
+				&.twitter{
+					background: #55acee;
+				}
+				&.facebook{
+					background: #3b5998;
+				}
+				&.instagram{
+					background: #3f729b;
+				}
+				&.dribble{
+					background: #ea4c89;
+				}
+				&.git{
+					background: #333333;
+				}
+			}
+		}
+}

@@ -1,0 +1,161 @@
+.header{
+	background: transparent;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index:1000;
+	
+	&-holder{
+		border-bottom:1px solid rgba(255,255,255,0.2);
+		padding:26px 0;
+@media only screen and (max-width: 1023px){
+		padding:10px 15px;
+	}
+	& .logo-block{
+		font-size:29px;
+		line-height:33px;
+		font-family:'proxima_nova_rgbold';
+		color:#fff;
+		text-transform:uppercase;
+		& a{
+			color:#fff;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	& #nav .drop{
+		text-align:right;
+		@media only screen and (max-width: 1023px){
+			text-align: center;
+		}
+		& ul{
+			list-style:none;
+			font-size: 13px;
+			line-height: 28px;
+			font-family:'montserratregular';
+			color: rgba(255,255,255,0.7);
+			text-transform: uppercase;
+			@media only screen and (max-width: 1023px){
+				background: rgba(0,0,0, 0.8);
+			}
+			& li{
+				display: inline;
+				padding:0 15px;
+				@media only screen and (max-width: 1023px){
+					display: block;
+					padding:5px 0;
+				}
+				&:first-child{
+					padding:0 15px 0 0;
+					@media only screen and (max-width: 1023px){
+						padding:5px 0;
+					}
+				}
+				&:last-child{
+					padding: 0 0 0 15px;
+					@media only screen and (max-width: 1023px){
+						padding:5px 0;
+					}
+				}
+				& a{
+					display: inline;
+					color: rgba(255,255,255,0.7);
+					text-decoration: none;
+					&.active{
+						color:#fff;
+					}
+					@media only screen and (max-width: 1023px){
+						display: block;
+					}
+					&:hover{
+						color: #fff;
+					}
+				}
+				& .btn-nav{
+					@include buttons(8px, 14px, $btn-hover-bg, $btn-bg, 12px);
+				}
+			}
+		}
+	}
+	& .call-number{
+		font-size: 13px;
+		line-height: 28px;
+		font-family:'montserratregular';
+		color: #fff;
+		padding:0 0 0 48px;
+		margin:0 0 0 25px;
+		position: relative;
+
+		@media only screen and (max-width: 767px){
+			display: none;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 20px;
+			background: rgba(255,255,255,0.7);
+			top:0;
+			left:0;
+		}
+		& i{
+			color: rgba(255,255,255,0.7);
+			font-size: 14px;
+			position: absolute;
+			top:3px;
+			left:29px;
+		}
+	}
+}
+}
+.header.header-inverse{
+	& .header-holder{ 
+	border-bottom:1px solid rgba(131,167,165,0.5);
+	& .logo-block{
+		color:$brand-color-secondary;
+		& a{
+			color:$brand-color-secondary;
+		}
+	}
+	& #nav{
+		& ul{
+			color: $text-base-color;
+			& li{
+				& a{
+					color: $text-base-color;
+					&.active{
+						color:darken($text-base-color, 20%);
+					}
+					&:hover{
+						color: darken($text-base-color, 20%);
+					}
+				}
+				.btn-nav{
+					@include buttons(8px, 14px, $btn-bg, $btn-hover-bg, 12px);
+					&:hover{
+						color:#fff;
+					}
+				}
+			}
+		}
+	}
+	& .call-number{
+		color: $text-base-color;
+		&:before{
+			background: $text-base-color;
+		}
+		& i{
+			color: $text-base-color;
+		}
+	}
+}
+}
+.sticking.header{
+	background: rgba(0,0,0,0.8);
+	& .header-holder{
+		padding:20px 10px;
+		border-bottom:none;
+	}
+}

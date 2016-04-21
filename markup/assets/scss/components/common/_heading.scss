@@ -1,0 +1,37 @@
+.heading{
+	text-align:center;
+	font-size:$heading-text-base-font-size;
+	line-height:$heading-text-base-line-height;
+	font-family:$heading-text-base-font-family;
+	color:$heading-text-base-color;
+	@media only screen and (max-width: 767px){
+		font-size:$heading-text-base-font-size-media;
+		line-height:$heading-text-base-line-height-media;
+	}
+	& h2{
+		position: relative;
+		padding: 0 0 22px;
+		margin: 0 0 23px;
+		@media only screen and (max-width: 767px){
+			padding:0 0 10px;
+			margin: 0 0 10px;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			bottom:0;
+			left:47%;
+			width: 65px;
+			height: 1px;
+			background: $brand-color;
+			@media only screen and (max-width: 767px){
+				left:40%;
+			}
+		}
+	}
+	& p{
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

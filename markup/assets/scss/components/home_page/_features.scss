@@ -1,0 +1,123 @@
+.features{
+	padding:97px 0  68px;
+	@media only screen and (max-width: 1023px){
+		padding:50px 0 70px;
+	}
+	@media only screen and (max-width: 767px){
+		padding:20px 0 30px;
+	}
+	& .heading{
+		margin:0 0 70px;
+		@media only screen and (max-width: 1023px){
+			margin: 0 0 40px;
+		}
+		@media only screen and (max-width: 767px){
+			margin: 0 0 20px;
+		}
+	}
+}
+.main-features{
+	text-align:center;
+	margin:0 0 32px;
+	&-item{
+		padding:0 35px;
+		@media only screen and (max-width: 767px){
+			padding:0;
+			margin:0 0 20px;
+		}
+		&:first-child{
+			padding:0 35px 0 0;
+			@media only screen and (max-width: 767px){
+				padding:0;
+			}
+		}
+		&:last-child{
+			padding:0 0 0 35px;
+			@media only screen and (max-width: 767px){
+				padding:0;
+			}
+		}
+		& i{
+			font-size: 52px;
+			color: $brand-color;
+			margin: 0 0 28px;
+			display: inline-block;
+			@media only screen and (max-width: 767px){
+				font-size: 40px;
+				margin: 0 0 15px;
+			}
+		}
+		& h3{
+			margin:0 0 23px;
+			@media only screen and (max-width: 767px){
+				margin:0 0 15px;
+			}
+		}
+	}
+}
+.expand-features{
+	padding:144px 0 0;
+	position: relative;
+	@media only screen and (max-width: 767px){
+		padding:70px 0 0;
+	}
+	&:before,
+	&:after{
+		content: '';
+		position: absolute;
+		background: #f2f2f2;
+		top:0;
+		left:50%;
+		width: 2px;
+		height:89px;
+		@media only screen and (max-width: 767px){
+			height: 50px;
+		}
+	}
+	&:after{
+		width: 89px;
+		height:2px; 
+		top:89px;
+		left:46%;
+		@media only screen and (max-width: 767px){
+			width: 50px;
+			top:50px;
+		}
+	}
+	&-title{
+		margin:0 0 16px;
+		display: flex;
+		align-items:center;
+		@media only screen and (max-width: 767px){
+			margin:0 0 8px;
+		}
+		& i{
+			color:$brand-color;
+			font-size: 32px;
+			margin:0 24px 0 0 ;
+			@media only screen and (max-width: 767px){
+				font-size: 25px;
+			}
+		}
+	}
+	&-item{
+		padding:0 37px;
+		margin:0 0 60px;
+		@media only screen and (max-width: 767px){
+			margin: 0 0 20px;
+			padding:0;
+		}
+		&:first-child{
+			padding:0 37px 0 0;
+			@media only screen and (max-width: 767px){
+				padding:0;
+			}
+		}
+		&:last-child{
+			padding:0 0 0 37px;
+			@media only screen and (max-width: 767px){
+				padding:0;
+			}
+		}
+	}
+}

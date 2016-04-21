@@ -1,0 +1,31 @@
+.download_block{
+	padding:75px 0;
+	position: relative;
+	@media only screen and (max-width: 767px){
+		padding:20px 0;
+		text-align: center;
+	}
+	&-overlay{
+		position: absolute;
+		top:0;
+		left:0;
+		right: 0;
+		height: 100%;
+		background: #eef1ec;
+		opacity: 0.95;
+	}
+	& h2{
+		margin: 0 0 13px;
+	}
+	&-btn{
+		text-align: right;
+		margin: 10px 0 0;
+		@media only screen and (max-width: 767px){
+			text-align: center;
+		}
+		& .btn{
+			padding:16px 22px;
+		}
+	}
+	
+}

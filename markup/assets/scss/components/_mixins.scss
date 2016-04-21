@@ -1,0 +1,15 @@
+@mixin buttons($padding-vertical, $padding-horizontal, $bg, $hover-bg, $font-size){
+	padding:$padding-vertical $padding-horizontal;
+	background: $bg;
+	color: #fff;
+	font-size:$font-size;
+	line-height:$btn-line-height;
+	font-family:'montserratregular';
+	text-transform:uppercase;
+	border-radius:2px;
+	display: inline-block;
+	cursor:pointer;
+	&:hover{
+		background: $hover-bg;
+	}
+}

@@ -1,0 +1,50 @@
+//brand-colors
+$brand-color:                         #6fb048;
+$brand-color-secondary:               #0f5f5c;
+$dark-section-bg:                     #eef1ec;
+
+
+//typographics:
+
+$text-base-color:                      #83a7a5;
+$text-base-font-size:                  14px;
+$text-base-line-height:                 22px;
+$text-base-font-family:                'robotoregular';
+
+$h2-color:                              $brand-color-secondary;
+$h2-font-size:                          32px;
+$h2-line-height:                         36px;
+$h2-font-family:                        'robotolight';
+
+$h2-font-size-media:                          25px;
+$h2-line-height-media:                        30px;
+
+$h3-color:                              $brand-color-secondary;
+$h3-font-size:                           16px;
+$h3-line-height:                         23px;
+$h3-font-family:                        'robotoregular';
+
+$h3-font-size-media:                      14px;
+$h3-line-height-media:                    17px;
+
+$h4-color:                              $brand-color-secondary;
+$h4-font-size:                           13px;
+$h4-line-height:                         22px;
+$h4-font-family:                        'robotomedium';
+
+$heading-text-base-color:                $text-base-color;
+$heading-text-base-font-size:            15px;
+$heading-text-base-line-height:           20px;
+$heading-text-base-font-family:          'robotoregular';
+
+$heading-text-base-font-size-media:           12px;
+$heading-text-base-line-height-media:         15px;
+
+//buttons
+$btn-font-size:                           14px;
+$btn-line-height:                          20px;
+$btn-font-family:                         'montserratregular';
+$btn-color:                                #fff;
+$btn-bg:                                   $brand-color;
+$btn-hover-color:                          #fff;
+$btn-hover-bg:                             #83a7a5;

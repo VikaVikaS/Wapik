@@ -1,0 +1,32 @@
+@import "components/variables";
+@import "components/reset";
+@import "components/bootstrap";
+@import "components/fonts";
+@import "components/mixins";
+@import "components/common/buttons";
+@import "components/common/header";
+@import "components/burger";
+
+/*home-page*/
+@import "components/home_page/top-info";
+@import "components/home_page/features";
+@import "components/common/heading";
+@import "components/home_page/info_section";
+@import "components/home_page/testimoniale";
+@import "components/home_page/add_info";
+@import "components/home_page/pricing";
+@import "components/home_page/download_block";
+
+/*about-us_page*/
+@import "components/about_us_page/top-info";
+@import "components/about_us_page/team-info";
+@import "components/about_us_page/download-block";
+
+/*pricing_page*/
+@import "components/pricing_page/pricing";
+
+/*contact_us_page*/
+@import "components/contact_us_page/header";
+@import "components/contact_us_page/forms";
+
+@import "components/common/footer";

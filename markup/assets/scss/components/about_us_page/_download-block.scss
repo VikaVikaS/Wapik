@@ -1,0 +1,17 @@
+#about_us-page {
+	& .download_block{
+		color:#fff;
+		&-overlay{
+			background: $brand-color;
+		}
+		& h2{
+			color:#fff;
+		}
+		& .btn{
+			background: darken($brand-color, 15%);
+			&:hover{
+				background: $btn-hover-bg;
+			}
+		}
+	}
+}

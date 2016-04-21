@@ -1,0 +1,15 @@
+#contact_us{
+	& .header{
+		position: static;
+		border:none;
+		&-holder{
+			border:none;
+		}
+	}
+}
+#contact_us{
+	& .header.not-sticking{
+		position: static !important;
+		border:none;
+	}
+}
